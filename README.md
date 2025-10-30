@@ -124,6 +124,22 @@ For AI steps, dataset creation, and performance metrics, see Section 3.2 in the 
 
 ---
 
+##  Modules Overview
+
+- `capture_faces.py`  
+  Captures webcam images of a user's face and stores them under their unique ID for training.
+
+- `extract_embeddings.py`  
+  Extracts facial embeddings using ArcFace, removes outliers, and saves clean vectors to a `.pkl` file.
+
+- `real_time_infer.py`  
+  Performs real-time face recognition via webcam. Sends the result to a FastAPI backend for access evaluation.
+
+- `face_utils.py`  
+  Contains helper functions for loading the face detection model and extracting faces from images.
+
+---
+
 ## Installation
 
 ### 1. Hardware Assembly
@@ -134,16 +150,93 @@ Follow the block diagrams in the PDF:
 - Electric Lock Circuit
 
 ### 2. Software Setup
-```bash
-# Clone repository
-git clone https://github.com/yourusername/secure-ai-iot-lock.git
-cd secure-ai-iot-lock
 
-# Install dependencies
-pip install -r requirements.txt
-
-# Configure Blynk (see config/blynk_config.md)
+# 1. Clone repository
 ```
+git clone https://github.com/salaheldeenyasser/NEXUS.git
+cd NEXUS
+```
+# 2. Install Dependencies
+
+Install required libraries using pip:
+
+```bash
+pip install opencv-python deepface requests scipy numpy
+```
+
+Make sure DeepFace also installs TensorFlow and related backends.
+
+# 3. Prepare Face Detection Model
+
+Place the following files inside:
+```
+models/res10/
+├── deploy.prototxt
+└── res10_300x300_ssd_iter_140000.caffemodel
+```
+
+# 4. Capture Faces
+
+```bash
+python capture_faces.py
+```
+
+# 5. Extract Embeddings
+
+```bash
+python extract_embeddings.py
+```
+
+# 6. Run Real-Time Recognition
+
+```bash
+python real_time_infer.py
+```
+# 7. Configure Blynk (see config/blynk_config.md)
+
+## 📡 API Integration
+
+The recognition script sends results to:
+
+```
+POST http://localhost:8000/access/
+```
+
+With JSON body:
+```json
+{
+  "pin": null,
+  "face_result": {
+    "match": true,
+    "name": "Ahmed"
+  },
+  "fingerprint_result": null
+}
+```
+
+## 📝 Project Structure
+
+```
+.
+├── capture_faces.py
+├── extract_embeddings.py
+├── real_time_infer.py
+├── face_utils.py
+├── face_embeddings.pkl
+├── models/
+│   └── res10/
+│       ├── deploy.prototxt
+│       └── res10_300x300_ssd_iter_140000.caffemodel
+├── data/
+│   └── {user_id}/user.{user_id}.{n}.jpg
+└── README.md
+```
+
+## ✅ Notes
+
+- Set `pin_toggle`, `face_toggle`, and `finger_toggle` in backend settings.
+- Works best with clean, evenly lit face images.
+- Additional biometric inputs can be integrated later (e.g., fingerprint).
 
 ### 3. Blynk App Setup
 1. Download **Blynk** app
