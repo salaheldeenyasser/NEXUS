@@ -49,7 +49,7 @@ Traditional security systems rely on single-factor authentication (keys, NFC car
 ---
 
 ## Table of Contents
-```markdown
+
 1. [Introduction](#introduction)
 2. [Features](#features)
 3. [Hardware](#hardware)
