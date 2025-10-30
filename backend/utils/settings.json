@@ -1,0 +1,6 @@
+{
+  "min_required": 1,
+  "admin_pass": "1234",
+  "device_pin": "0000",
+  "mute": false
+}

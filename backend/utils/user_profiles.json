@@ -1,0 +1,26 @@
+[
+  {
+    "id": "95b14e23-4151-4e63-8921-27145d8ccd08",
+    "name": "Salah",
+    "role": "admin",
+    "fingerprint_position": "1"
+  },
+  {
+    "id": "3cd343d0-bce2-416e-99ad-d01f4efbbc6b",
+    "name": "test",
+    "role": "admin",
+    "fingerprint_position": "None"
+  },
+  {
+    "id": "3e24c976-350f-4c70-a3d7-f0c0887c33a2",
+    "name": "jmjm",
+    "role": "admin",
+    "fingerprint_position": "None"
+  },
+  {
+    "id": "45471244-24c1-40fd-abb8-d19d1d0d4e8e",
+    "name": "testt",
+    "role": "admin",
+    "fingerprint_position": "None"
+  }
+]
