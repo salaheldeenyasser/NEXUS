@@ -151,12 +151,12 @@ Follow the block diagrams in the PDF:
 
 ### 2. Software Setup
 
-# 1. Clone repository
+#### 1. Clone repository
 ```
 git clone https://github.com/salaheldeenyasser/NEXUS.git
 cd NEXUS
 ```
-# 2. Install Dependencies
+#### 2. Install Dependencies
 
 Install required libraries using pip:
 
@@ -166,7 +166,7 @@ pip install opencv-python deepface requests scipy numpy
 
 Make sure DeepFace also installs TensorFlow and related backends.
 
-# 3. Prepare Face Detection Model
+#### 3. Prepare Face Detection Model
 
 Place the following files inside:
 ```
@@ -175,26 +175,26 @@ models/res10/
 └── res10_300x300_ssd_iter_140000.caffemodel
 ```
 
-# 4. Capture Faces
+#### 4. Capture Faces
 
 ```bash
 python capture_faces.py
 ```
 
-# 5. Extract Embeddings
+#### 5. Extract Embeddings
 
 ```bash
 python extract_embeddings.py
 ```
 
-# 6. Run Real-Time Recognition
+#### 6. Run Real-Time Recognition
 
 ```bash
 python real_time_infer.py
 ```
-# 7. Configure Blynk (see config/blynk_config.md)
+#### 7. Configure Blynk (see config/blynk_config.md)
 
-## 📡 API Integration
+### 3. API Integration
 
 The recognition script sends results to:
 
@@ -214,7 +214,7 @@ With JSON body:
 }
 ```
 
-## 📝 Project Structure
+### 4. 📝 Project Structure
 
 ```
 .
@@ -232,7 +232,7 @@ With JSON body:
 └── README.md
 ```
 
-## ✅ Notes
+#### ✅ Notes
 
 - Set `pin_toggle`, `face_toggle`, and `finger_toggle` in backend settings.
 - Works best with clean, evenly lit face images.
