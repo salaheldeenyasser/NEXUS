@@ -297,12 +297,11 @@ See Chapter 4 in the PDF for more.
 
 ## Contributors
 
-- **Adham Ahmed** – Hardware & Power Systems
-- **Salah Eldeen Yasser** – AI & Face Recognition
-- **Bassel Ahmed** – IoT & Blynk Integration
-- **Yousuf Ahmed** – GUI & System Software
-- **Amr Khaled** – Fingerprint & Sensors
-- **Ahmed Mostafa** – Documentation & Testing
+- **Adham Ahmed** – GUI & System Software
+- **Salah Eldeen Yasser** – Hardware & Power Systems & Fingerprint & Sensors
+- **Yousuf Ahmed & Ahmed Mostafa** – AI & Face Recognition
+- **Amr Khaled & Salah Eldeen Yasser** – IoT & Blynk Integration
+- **Bassel Ahmed** – Back-End & Documentation & Testing
 
 ---
 
