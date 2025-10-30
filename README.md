@@ -214,7 +214,7 @@ With JSON body:
 }
 ```
 
-### 4. 📝 Project Structure
+### 4. Project Structure
 
 ```
 .
@@ -232,7 +232,7 @@ With JSON body:
 └── README.md
 ```
 
-#### ✅ Notes
+#### - Notes
 
 - Set `pin_toggle`, `face_toggle`, and `finger_toggle` in backend settings.
 - Works best with clean, evenly lit face images.
