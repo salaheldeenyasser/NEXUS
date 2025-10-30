@@ -1,0 +1,21 @@
+.container {
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 90px;
+  }
+
+.back {
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    width: 230px;
+    top: 250px;
+    left: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 1px;
+}

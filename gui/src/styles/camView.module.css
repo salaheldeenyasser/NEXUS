@@ -1,0 +1,19 @@
+.camVid {
+    width: 180px;
+    margin-left: 21%;
+    margin-top: 5%;
+}
+
+.camHome {
+    box-sizing: border-box;
+    position: absolute;
+    top: 210px;
+    margin-left: -110px;
+}
+
+/* .camAud {
+    box-sizing: border-box;
+    position: absolute;
+    top: 210px;
+    margin-left: -180px;
+} */

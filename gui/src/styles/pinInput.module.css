@@ -1,0 +1,45 @@
+.pinInput {
+    width: 200px;
+    position: absolute;
+    text-align: center;
+    margin-left: 3%;
+    top: 90px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(166, 223, 241);
+    border-color: #ccc;
+    color: rgb(88, 146, 226);
+    caret-color: transparent;
+    font-size: 18px;
+  }
+  
+  .pinInput::placeholder {
+    color: rgb(88, 146, 226);
+  }
+  
+  .pinInput:focus {
+    border-color: #ccc;
+    outline: none;
+  }
+
+  .camAccess {
+    position: absolute;
+    top: 180px;
+    margin-left: 5.5%;
+    
+  }
+
+  .settingsBtn {
+    position: absolute;
+    top: 210px;
+    margin-left: 6.7%;
+  }
+
+  button {
+    border-radius: 5px;
+    background-color: rgb(166, 223, 241);
+    border-color: #ccc;
+    color: rgb(88, 146, 226);
+    caret-color: transparent;
+    cursor: pointer;
+  }

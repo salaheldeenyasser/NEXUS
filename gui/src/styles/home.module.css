@@ -1,0 +1,23 @@
+button {
+    border-radius: 5px;
+    background-color: rgb(210, 210, 210);
+    border-color: black;
+    caret-color: transparent;
+    cursor: pointer;
+  }
+
+  .camView {
+    position: absolute;
+    border-bottom: 2px solid black;
+  }
+  
+  .iconsContainer {
+    position: absolute;
+    top: 250px;
+    left: 13px;
+  }
+
+  .iconsContainer img {
+    margin: 0 5px;
+    cursor: pointer;
+  }

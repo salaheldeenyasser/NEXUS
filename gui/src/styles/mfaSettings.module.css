@@ -1,0 +1,58 @@
+.container {
+    width: 236px;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 6px;
+  }
+  
+  input[type='checkbox'] {
+    margin-right: 8px;
+  }
+  
+  .dropdownLabel {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .dropdown {
+    width: 100%;
+    margin-top: 8px;
+    font-size: 14px;
+    padding: 4px;
+
+    border-radius: 5px;
+    background-color: rgb(210, 210, 210);
+    border-color: black;
+  }
+  
+  .switch {
+    margin-bottom: 0;
+  }
+
+  button {
+    margin-left: 40%;
+  }
+
+  .back {
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    top: 270px;
+    left: 95px;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 1px;
+}

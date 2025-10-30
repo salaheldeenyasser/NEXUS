@@ -1,0 +1,43 @@
+.container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .message {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: rgb(60, 60, 60);
+  }
+  
+  .button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0;
+    position: absolute;
+    top: 200px;
+    left: 40px;
+    cursor: pointer;
+    background-color: rgb(210, 210, 210);
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .back, .nextBtn {
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    top: 270px;
+    left: 95px;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+  .nextBtn {
+    left: 135px;
+  }

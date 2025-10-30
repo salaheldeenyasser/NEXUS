@@ -1,0 +1,10 @@
+.back {
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    top: 270px;
+    left: 95px;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 1px;
+}

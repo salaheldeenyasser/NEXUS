@@ -1,0 +1,42 @@
+.h2settings {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.ulSettings {
+    margin-top: -10px;
+    margin-left: -4px;
+}
+
+.liSettings {
+    list-style-type: none;
+    font-size: 20px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    width: 200px;
+    padding-left: 5px;
+    margin-left: -23.5px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(210, 210, 210);
+    cursor: pointer;
+    text-align: center;
+}
+
+.liSettings:hover {
+    color: rgb(136, 145, 158);
+}
+
+.back {
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    top: 270px;
+    left: 95px;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
