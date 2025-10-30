@@ -238,4 +238,5 @@ See [`LICENSE`](./LICENSE) for full details.
 **Project Documentation:** [`GradBookV3.pdf`](./GradBookV3.pdf)  
 **Date:** June 14, 2025  
 **Institution:** Misr University for Science and Technology
-```
+
+---
