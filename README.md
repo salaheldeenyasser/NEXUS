@@ -1,6 +1,6 @@
 # Secure Computerized Control System Based on AI with IoT Compatibility
 
-[![MUST Logo](https://via.placeholder.com/150x150.png?text=MUST+Logo)](#)  
+![MUST Logo](https://smartlearning.must.edu.eg/pluginfile.php/1/core_admin/logocompact/300x300/1715171530/logo.png)  
 **Misr University for Science and Technology**  
 **Faculty of Engineering – Department of Computer and Software**
 
@@ -49,15 +49,193 @@ Traditional security systems rely on single-factor authentication (keys, NFC car
 ---
 
 ## Table of Contents
-
-1. [Introduction](#introduction)
-2. [Features](#features)
-3. [Hardware](#hardware)
-4. [Software](#software)
-5. [Installation](#installation)
-6. [Usage](#usage)
-7. [Market Research](#market-research)
-8. [Limitations & Future Work](#limitations--future-work)
-9. [Contributors](#contributors)
-10. [Acknowledgements](#acknowledgements)
+1. [Introduction](#introduction)  
+2. [Features](#features)  
+3. [Hardware](#hardware)  
+4. [Software](#software)  
+5. [Installation](#installation)  
+6. [Usage](#usage)  
+7. [Market Research](#market-research)  
+8. [Limitations & Future Work](#limitations--future-work)  
+9. [Contributors](#contributors)  
+10. [Acknowledgements](#acknowledgements)  
 11. [License](#license)
+
+---
+
+## Introduction
+
+This repository contains the source code, documentation, and resources for our Bachelor of Engineering final project at Misr University for Science and Technology.
+
+The system addresses vulnerabilities in traditional security by providing multi-factor authentication with AI and IoT integration, demonstrated via a smart door lock.
+
+For detailed background, significance, challenges, objectives, and market research, refer to Chapter 1 in [`GradBookV3.pdf`](./GradBookV3.pdf).
+
+---
+
+## Features
+
+- **Multi-Factor Authentication** (Face + Fingerprint + Keypad + Phone)
+- **Configurable Security Levels** (1 to 3 factors)
+- **Remote Live Video Feed** for admin verification
+- **Smartphone Control** via Blynk IoT app
+- **User Role Management** (Admin / Normal)
+- **AI-Powered Face Recognition** using **ArcFace**
+- **Touchscreen GUI** for local interaction
+- **Battery Backup & Power Management**
+
+---
+
+## Hardware
+
+| Component | Description |
+|---------|-----------|
+| **Raspberry Pi 5** | Main processing unit |
+| **MPI3201 Touch Screen** | 3.5" display for GUI |
+| **NodeMCU ESP8266** | Wi-Fi & IoT communication |
+| **Raspberry Pi Camera V1.3** | Face detection |
+| **R301T Fingerprint Module** | Biometric authentication |
+| **Solenoid Lock + 5V Relay** | Door control |
+| **PIR Sensor (SR501)** | Motion detection |
+| **18650 Li-ion Battery + BMS** | Backup power |
+| **12V Power Supply + Step-Down** | Stable power delivery |
+
+> Full circuit diagrams, block diagrams, and live photos are in [`GradBookV3.pdf`](./GradBookV3.pdf) (Section 3.1).
+
+---
+
+## Software
+
+- **OS:** Raspberry Pi OS
+- **Language:** Python
+- **AI Model:** ArcFace (Face Recognition)
+- **GUI:** Custom Python-based touchscreen interface
+- **IoT Platform:** Blynk (Remote access & video)
+- **Libraries:** OpenCV, TensorFlow/Keras, PyFingerprint, BlynkLib
+
+### GUI Screens
+- Home Screen
+- Admin Login
+- Main Settings
+- User Management
+- Add User / Fingerprint Enrollment
+
+For AI steps, dataset creation, and performance metrics, see Section 3.2 in the PDF.
+
+---
+
+## Installation
+
+### 1. Hardware Assembly
+Follow the block diagrams in the PDF:
+- Power System
+- Main Unit
+- ESP8266 Board
+- Electric Lock Circuit
+
+### 2. Software Setup
+```bash
+# Clone repository
+git clone https://github.com/yourusername/secure-ai-iot-lock.git
+cd secure-ai-iot-lock
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Configure Blynk (see config/blynk_config.md)
+```
+
+### 3. Blynk App Setup
+1. Download **Blynk** app
+2. Create new project
+3. Scan QR code or enter Auth Token
+4. Configure virtual pins for:
+   - Door unlock
+   - Live video stream
+   - Notifications
+
+Detailed software configuration in Section 3.3-3.4 of the PDF.
+
+---
+
+## Usage
+
+### Local Access (Touchscreen)
+1. Wake system via PIR or touch
+2. Select authentication method(s)
+3. Authenticate using face, fingerprint, or keypad
+4. Door unlocks if all required factors pass
+
+### Remote Access (Phone)
+1. Receive push notification on motion
+2. View live video
+3. Approve/Deny access
+
+### Admin Mode
+- Log in with credentials
+- Add/delete users
+- Enroll fingerprints & faces
+- Configure security level
+- Promote users to admin
+
+---
+
+## Market Research
+
+Analyzed 4 existing smart lock systems:
+- **Device 1–4**: Outdoor/indoor views in PDF (Section 1.6)
+- Common flaws: single-factor, no remote video, poor UI
+- Our system addresses these with **multi-layer AI + IoT**
+
+---
+
+## Limitations & Future Work
+
+| Limitations | Future Enhancements |
+|-----------|---------------------|
+| Limited face dataset size | Cloud-based face database |
+| No encryption on video stream | End-to-end encrypted video |
+| Battery life ~6–8 hours | Solar charging integration |
+| Local processing only | Edge + Cloud hybrid AI |
+
+See Chapter 4 in the PDF for more.
+
+---
+
+## Contributors
+
+- **Adham Ahmed** – Hardware & Power Systems
+- **Salah Eldeen Yasser** – AI & Face Recognition
+- **Bassel Ahmed** – IoT & Blynk Integration
+- **Yousuf Ahmed** – GUI & System Software
+- **Amr Khaled** – Fingerprint & Sensors
+- **Ahmed Mostafa** – Documentation & Testing
+
+---
+
+## Acknowledgements
+
+We deeply thank:
+- **Dr. Abdelhameed Sharaf** – Project Supervisor
+- **Eng. Nizar Hussein** – Technical Mentor
+- Our **team members** for dedication and collaboration
+- Our **families** for unwavering support
+
+---
+
+## License
+
+MIT License
+
+Copyright (c) 2025 MUST Computer Engineering Team
+
+Permission is hereby granted, free of charge, to any person obtaining a copy...
+
+See [`LICENSE`](./LICENSE) for full details.
+
+---
+
+**Project Documentation:** [`GradBookV3.pdf`](./GradBookV3.pdf)  
+**Date:** June 14, 2025  
+**Institution:** Misr University for Science and Technology
+```
