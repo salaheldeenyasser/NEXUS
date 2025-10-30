@@ -1,0 +1,24 @@
+📂 RP5 Face Recognition & Access Backend - Full Structure
+
+README.md                                                    # 📘 Project overview, setup instructions, and usage details
+backend/core/logic.py                                        # 🧮 Scoring logic for access decisions based on match results
+backend/core/user_profile.py                                 # 👤 User model (name, face, pin, fingerprint)
+backend/main.py                                              # 🚀 FastAPI application entry point
+backend/routes/access.py                                     # 🔐 Access control endpoint (/access)
+backend/routes/admin.py                                      # 🛠 Admin settings and login endpoint (/admin)
+backend/utils/auth.py                                        # 🔑 Basic token generation and validation (base64)
+backend/utils/settings.json                                  # 📁 Config: which authentication modes are active
+backend/utils/settings.py                                    # ⚙️ Load/save system settings (JSON-based)
+backend/utils/user_profiles.json                             # 👥 Stored user profiles (face, pin, fingerprint)
+capture_faces.py                                             # 📸 Webcam-based face capture for new user registration
+deepface_filtered/                                           # 🧪 Full DeepFace environment: datasets, notebook, models
+deepface_filtered/deepface/data/                             # 🗂 Training images (user.1.*, user.2.* etc.)
+deepface_filtered/deepface/models/res10/                     # 📦 Pretrained ResNet10 SSD face detector (Caffe)
+deepface_filtered/deepface/requirements-for-setupEnv.txt     # 📦 Original DeepFace environment dependencies
+deepface_filtered/deepface/scripts/Deepface_lastV.ipynb      # 📓 Original notebook with full logic
+deepface_filtered/deepface/test_dataset/                     # 🧪 Test dataset for validation
+deepface_filtered/deepface/utils/                            # 🛠 Original utility scripts (auth, settings, etc.)
+extract_embeddings.py                                        # 🔍 Embedding extraction + outlier removal using ArcFace
+face_utils.py                                                # 🧠 Shared face detection utilities (model loading, cropping)
+real_time_infer.py                                           # 🎥 Real-time face recognition with /access API integration
+requirements.txt                                             # 📦 Combined dependencies for DeepFace + FastAPI backend
