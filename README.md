@@ -69,7 +69,7 @@ This repository contains the source code, documentation, and resources for our B
 
 The system addresses vulnerabilities in traditional security by providing multi-factor authentication with AI and IoT integration, demonstrated via a smart door lock.
 
-For detailed background, significance, challenges, objectives, and market research, refer to Chapter 1 in [`GradBookV3.pdf`](./GradBookV3.pdf).
+For detailed background, significance, challenges, objectives, and market research, refer to Chapter 1 in [`GradBookV3.pdf`](./GradBook/GradBookV3.pdf).
 
 ---
 
@@ -100,7 +100,7 @@ For detailed background, significance, challenges, objectives, and market resear
 | **18650 Li-ion Battery + BMS** | Backup power |
 | **12V Power Supply + Step-Down** | Stable power delivery |
 
-> Full circuit diagrams, block diagrams, and live photos are in [`GradBookV3.pdf`](./GradBookV3.pdf) (Section 3.1).
+> Full circuit diagrams, block diagrams, and live photos are in [`GradBookV3.pdf`](./GradBook/GradBookV3.pdf) (Section 3.1).
 
 ---
 
@@ -328,7 +328,7 @@ See [`LICENSE`](./LICENSE) for full details.
 
 ---
 
-**Project Documentation:** [`GradBookV3.pdf`](./GradBookV3.pdf)  
+**Project Documentation:** [`GradBookV3.pdf`](./GradBook/GradBookV3.pdf)  
 **Date:** June 14, 2025  
 **Institution:** Misr University for Science and Technology
 
